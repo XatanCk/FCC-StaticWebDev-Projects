@@ -1,0 +1,222 @@
+*{
+    --primary-color: #ff7b00;
+    --secondary-color: #2e282a;
+    --primary-fcolor: #fafffd;
+    --secondary-fcolor: #006ab1;
+    --btn-color: #a2d729; 
+}
+
+body{
+    font-family: monospace, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-fcolor);
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+.stick{
+    position: sticky;
+    top: 0px;
+}
+
+/* Header */
+.header{
+    background-color: var(--primary-color);
+    padding: 20px 25px;
+}
+
+img{
+    color: var(--secondary-color)
+}
+
+.menu a{
+    margin: 0 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover{
+    color: var(--primary-fcolor);
+    border-bottom: 2px solid var(--primary-fcolor);
+}
+.mg1{
+    margin: 5px 0;
+}
+
+/* Content */
+    /* Sign Up */
+.sign-up{
+    width: 400px;
+    margin: 40px auto; 
+    flex-direction: column;
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.sign-up .mail{
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.sign-up .mail:hover,
+.sign-up .mail:focus-visible{
+    border: 2px solid var(--primary-color);
+}
+
+.btn{
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    width: 80px;
+    padding: 5px;
+    align-self: center;
+    font-family: monospace;
+}
+
+.btn:hover{
+    border: 2px solid #fff;
+}
+
+.btn:active{
+    box-shadow: 0 1px 5px 0 #fff;
+}
+
+    /* Features */
+.features{
+    flex-direction: column;
+    width: 70vw;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.features .flex{
+    justify-content: flex-start;
+    margin: 20px;
+    align-items: center;
+}
+
+.features .pic{
+    color: var(--primary-color);
+    font-size: 60px;
+    margin: 0 60px;
+}
+
+.ftr-1 .pic{
+    margin-left: 73px;
+    margin-right: 77px;
+}
+
+.features h2{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.features p{
+    font-size: 18px;
+}
+
+    /* Video */
+.vod iframe{
+    display: block;
+    margin: 60px auto;
+    width: 560px;
+    height: 320px;
+}
+
+    /* Plans */
+.plans{
+    width: 75vw;
+    margin: 80px auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 2px solid #fff;
+    width: 300px;
+    margin: 10px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: ease-in;
+    transition-duration: 0.1s;
+}
+
+.plans .heading{
+    text-transform: uppercase;
+    background-color: #141313;
+    padding: 10px 20px;
+}
+
+.plans .price{
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.plans .desc{
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+}
+
+.plans .select{
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+.footer{
+    background-color: #141313;
+    padding: 20px 25px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+.menu-btm a{
+    margin: 0 20px;
+    border-bottom: 2px solid transparent;
+    color: var(--primary-fcolor);
+
+}
+
+.menu-btm a:hover{
+    color: var(--primary-fcolor);
+    border-bottom: 2px solid var(--primary-fcolor);
+}
+.mg1{
+    margin: 5px 0;
+}
+
+.footer .cpr{
+    text-align: right;
+    margin: 15px 20px 2px 20px;
+}
+
+@media(max-width: 768px){
+    .vod iframe{
+    display: block;
+    margin: 60px auto;
+    width: 400px;
+    height: 250px;
+}
+}
