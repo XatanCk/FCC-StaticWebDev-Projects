@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- Heading -->
+    <div class="container container-head">
+        <h1 class="heading" id="title">Customer Survey</h1>
+        <p class="caption" id="description">Thank you for taking time to help us improve</p>
+    </div>
+
+    <!-- Survey Form -->
+    <div class="container container-form">
+        <div class="card">
+            <form action="#" id="survey-form">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                <br>
+                <label for="age">Age</label>
+                <input type="text" id="age" placeholder="Enter your age">
+                <br>
+
+<!-- Alternative way to make a dropdown
+                <p>Which option best describes your role?</p>
+                <input list="role-select" placeholder="Select role" id="dropdown">
+                    <datalist id="role-select">
+                        <option value="Student">
+                        <option value="Employed">
+                        <option value="Retired">
+                        <option value="Prefer not to say">
+                    </datalist>
+                <br>  
+-->
+
+                <p>Which option best describes your role?</p>
+                <select name="role" id="dropdown">
+                    <option disabled selected value class="defo">Select your role</option>
+                    <option value="Student">Student</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Retired">Retired</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+                <br>
+
+                <span class="rdo">         
+                <p>Did you like our new product?</p>     
+                    <label for="yes">
+                        <input type="radio" id="yes" name="y/n" value="yes">Yes
+                    </label>
+                    <label for="no">
+                        <input type="radio" id="no" name="y/n" value="no">No
+                    </label>
+                    <label for="csay">
+                        <input type="radio" id="csay" name="y/n" value="can't say">Can't Say
+                    </label>
+                </span>
+                
+                <label for="number" id="number-label">What is your rating of the product(1-10)?</label>
+                <input type="number" id="number" max="10" min="1" placeholder="Enter rating">
+                <br>
+
+
+                <span class="chk">
+                <p>Which feature did you like that best?</p>
+                <label for="ui">
+                    <input type="checkbox" id="ui" name="ftr" value="ui">User Interface
+                </label>
+                <label for="lout">
+                    <input type="checkbox" id="lout" name="ftr" value="lout">Layout
+                </label>
+                <label for="ctnt">
+                    <input type="checkbox" id="ctnt" name="ftr" value="ctnt">Content
+                </label>
+                <label for="otr">
+                    <input type="checkbox" id="otr" name="ftr" value="otr">Other
+                </label>
+                </span>
+                <br>
+                
+
+                <label for="cmt">Comments/Suggestions</label>
+                <textarea id="cmt" placeholder="Enter your comment here..."></textarea>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
