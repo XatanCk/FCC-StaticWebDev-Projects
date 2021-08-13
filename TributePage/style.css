@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root{
+    --primary-color: #EDDDD4;
+    --secondary-color: #197278;
+    --font-color: #ececec;
+    --btn-color: #0c043d;
+    --act-btn-color: #5a1006;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: var(--primary-color) ;
+    color: var(--font-color);
+    font-family: 'Oswald', sans-serif;
+}
+
+.header{
+    background-color: var(--secondary-color);
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.quote{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+#img-caption{
+    color: #000;
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+.content{
+    background-color: var(--secondary-color);
+}
+
+.timeline{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;;
+}
+
+.timeline .container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tl-heading{
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.timeline .events{
+    position: relative;
+    left: 60px;
+}
+
+.timeline .events li{
+    padding: 8px;
+    font-size: 18px;
+}
+
+.quote-2{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    font-size: 18px;
+}
+.content .quote{
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.content .by{
+    text-align: left;
+    padding: 0 0 20px 30px;
+}
+
+.further-info{
+    font-size: 20px;
+}
+
+.further-info a{
+    color: var(--btn-color);
+}
+
+.further-info a:visited {
+    color: var(--act-btn-color);
+}
