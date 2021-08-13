@@ -1,1 +1,1 @@
-FCC Projects - WebDev (HTML/CSS)
+Static Web Projects with HTML/CSS only
